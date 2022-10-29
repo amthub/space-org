@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.crew {
+    /* background: linear-gradient(rgb(15, 15, 15),rgb(8, 8, 10),rgb(17, 17, 22),rgb(0, 0, 18)); */
+
+    background: url("logo1.jfif");
+    background-size: cover;
+    overflow-y: scroll;
+    min-height: 100vh;
+}
+
+.crew-member {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 130px 100px;
+    gap: 20px;
+}
+
+.info p,
+h3,
+div {
+    padding: 10px 10px;
+}
+
+.mem-pics {
+    width: 400px;
+}
+
+.circles {
+    display: flex;
+}
+
+.circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 40px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 20px;
+    padding: 60px 0px 0px 8%;
+    font-weight: light;
+    background: transparent;
+}
+
+.info p {
+    color: grey;
+}
+
+.info h3 {
+    font-size: 40px;
+    font-weight: light;
+
+}
+
+.mem-pics {
+    height: 300px;
+    width: 300px;
+}
+
+@media (max-width:650px) {
+    .crew-member {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    img {
+        padding-right: 100px;
+    }
+
+    .heading {
+        padding-left: 10%;
+    }
+}

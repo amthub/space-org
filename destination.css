@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    margin-left: 0px;
+}
+
+.nav-bar {
+    padding-right: 50%;
+    margin-left: 0px;
+}
+
+.destination {
+    /* background: linear-gradient(rgb(3, 3, 51), rgb(2, 2, 51), rgb(2, 2, 32), rgb(0, 0, 11)); */
+    background: url("back.jpg");
+    position: relative;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    padding: 0px 40px 200px 0px;
+    overflow-x: scroll;
+    background-size: cover;
+}
+
+.destination1 {
+    display: flex;
+
+    width: 100vw;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    margin: 100px auto;
+    gap: 200px;
+    padding: 20px 100px;
+    /* flex-wrap: wrap; */
+}
+
+.img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.planets ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.planets ul li {
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    /* padding-bottom: 2px; */
+}
+
+.distance {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+
+.distance p,
+span {
+    font-family: cursive;
+}
+
+@media (max-width: 650px) {
+    .destination {
+        position: relative;
+        overflow-y: scroll;
+    }
+
+    .destination1 {
+        flex-direction: column;
+        /* overflow-y: scroll; */
+        /* position: absolute; */
+        /* height: 100vh; */
+    }
+
+    .left-side {
+        /* overflow-y: scroll; */
+
+    }
+}

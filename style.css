@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    /* background-image: url("logo1.jfif"); */
+    /* background: url("Outer Space.jfif"); */
+    background: url("spaceship.jfif");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    /* transform: rotate(180deg); */
+}
+
+::-webkit-scrollbar {
+    width: 0px
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0px 10px 40px;
+
+}
+
+.nav-bar {
+    /* margin-right: 10px; */
+    /* border: 2px solid blue; */
+    background: linear-gradient(rgb(19, 43, 50), rgb(13, 35, 69));
+    padding: 20px 20% 20px 40px;
+
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.nav-bar ul li a {
+    color: rgba(255, 255, 255, 0.588);
+    text-decoration: none;
+    margin: 0px 10px;
+
+
+}
+
+.nav-bar ul li a:hover {
+    border-bottom: 3px solid white;
+}
+
+.logo {
+    background-color: white;
+    height: 43px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 10px 5px;
+    /* margin-left: 20px; */
+}
+
+.logo img {
+    width: 36px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 100px 100px 400px 100px;
+    text-align: left;
+    gap: 100px;
+    overflow-y: scroll;
+
+}
+
+.left-side {
+    color: white;
+}
+
+.left-side .heading {
+    font-size: 100px;
+    font-weight: lighter;
+}
+
+.right-side {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(134, 155, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+}
+
+
+
+@media (max-width: 550px) {
+    .container {
+        /* width: 1000px;
+        height: 100vh; */
+        position: fixed;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px 10px 40px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-bar ul {
+        /* width: 1000px; */
+
+    }
+}
