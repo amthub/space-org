@@ -81,4 +81,9 @@ div {
     .heading {
         padding-left: 10%;
     }
+    .nav-bar{
+        position: relative;
+        right: 3%;
+       
+    }
 }

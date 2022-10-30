@@ -43,8 +43,8 @@ h3 {
 
 .no {
     background-color: transparent;
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -69,15 +69,18 @@ span {
     .l_vehicles {
         display: flex;
         flex-direction: column;
-        padding: 10px 100px;
+        padding: 10px 30px;
     }
 
     .vehicle_img {
         position: relative;
         left: 20px;
     }
-
+    .no{
+        padding: 40px;
+    }
     .vehicle_no {
         display: flex;
     }
+    
 }
